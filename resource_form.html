@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Educational Racial Justice Website">
+    <meta name="author" content="Andrea Flores">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>Educate Yourself | Submit a Resource</title>
+</head>
+<body>
+    <header class="header-fixed">
+        <div class="header-limiter">
+            <h1><a href="#">Educate<span>Yourself</span></a></h1>
+            <nav>
+                <a href="index.html">About</a>
+                <a href="resource_form.html" class="selected">Submit a Resource</a>
+                <a href="#">FAQ</a>
+            </nav>
+        </div>
+    </header>
+    <div id="form-block">
+    <h2>Submit a Resource to the Community</h2>
+        <form name="contact" method="POST" data-netlify="true">
+            <p>
+                <label>Your Name and Pronouns:<input placeholder="Ex: Andrea, she/her/hers"type="text" name="name" /></label>
+            </p>
+            <p>
+                <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+                <label>Resource Type: <select name="type[]" multiple>
+                        <option value="article">Article</option>
+                        <option value="book">Book</option>
+                        <option value="podcast">Podcast</option>
+                        <option value="tweet">Tweet</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="facebook">Facebook</option>
+                    </select></label>
+            </p>
+            <p>
+                <label>Link:<textarea name="message"></textarea></label>
+            </p>
+            <p>
+                <button type="submit">Send</button>
+            </p>
+        </form>
+    </div>
+    <footer>&copy; Andrea Flores 2020</footer>
+</body>
+</html>
