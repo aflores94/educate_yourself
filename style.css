@@ -3,14 +3,26 @@ body {
     color: white;
     text-align: center;
     margin: 0;
-    padding: 0;  
+    padding: 0;
     font-family: 'Playfair Display', serif;
 }
 
-h1 {
+h1,
+h3 {
     font-family: 'Permanent Marker', cursive;
     margin: 0;
     padding: 0;
+}
+
+h2,
+h4,
+h5 {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+
+.landing-page {
+    margin-top: 30%;
 }
 
 button {
@@ -19,32 +31,50 @@ button {
     font-family: 'Permanent Marker', cursive;
     font-weight: bold;
     color: goldenrod;
-    background-color: white; 
+    background-color: white;
 }
 
-button:hover {
+button a {
+    font-weight: bold;
+    color: goldenrod;
+    text-decoration: none;
+}
+
+button:hover,
+button a:hover {
     color: white;
     background-color: black;
 }
 
-.text-block {
-    margin-top: 10%;
+#resource-lists {
+    display: grid;
+
 }
 
-#form-block {
-    margin-top: 5%;
+#urgent-action-alert {
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    background-color: lightgreen;
+    color: black;
+    margin-bottom: 15px;
 }
 
-footer {
-  position: fixed;
-  color: grey;
-  background-color: whitesmoke;
-  left: 0;
-  bottom: 0;
-  padding: 1vh;
-  width: 100%;
-  font-size: .8rem;
-  text-align: center;
+#urgent-action-alert a:link,
+a:visited {
+    color: black;
+}
+
+#urgent-action-alert h3 {
+    font-family: 'Permanent Marker',
+        cursive;
+    margin: 0;
+    padding: 0;
+}
+
+#urgent-action-alert li {
+    list-style: square;
+    padding: .3rem;
 }
 
 form {
@@ -53,6 +83,54 @@ form {
     border: 5px solid white;
     padding: 3vh;
     width: 40%;
+}
+
+#faq,
+#form-block {
+    margin: 1% auto;
+    text-align: center;
+    padding: 1rem;
+}
+
+#form-block h5 {
+    width: 50%;
+    text-align: justify;
+    margin: auto;
+    padding: .5rem;
+}
+
+#faq li,
+#form-block p,
+#form-block option {
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    list-style: none;
+}
+
+#faq ul,
+#form-block form {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    background-color: white;
+    color: black;
+    border: .7rem double black;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: black;
+    font-weight: bold;
+    float: left;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
 }
 
 .header-fixed {
@@ -153,6 +231,17 @@ body.fixed .header-fixed .header-limiter nav {
     font-size: 13px;
 }
 
+footer {
+    position: fixed;
+    color: grey;
+    background-color: whitesmoke;
+    left: 0;
+    bottom: 0;
+    padding: 1vh;
+    width: 100%;
+    font-size: .8rem;
+    text-align: center;
+}
 
 /* Making the header responsive */
 
@@ -195,7 +284,8 @@ body.fixed .header-fixed .header-limiter nav {
     button {
         size: 2rem;
     }
-    .text-block {
+
+    .landing-page {
         margin-top: 30%;
     }
 
@@ -209,7 +299,8 @@ body.fixed .header-fixed .header-limiter nav {
     button {
         font-size: 1.1rem;
     }
-    .text-block {
+
+    .landing-page {
         margin-top: 20%;
     }
 }
@@ -222,7 +313,8 @@ body.fixed .header-fixed .header-limiter nav {
     button {
         font-size: 1.3rem;
     }
-    .text-block {
+
+    .landing-page {
         margin-top: 10%;
     }
 
