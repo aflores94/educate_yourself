@@ -96,6 +96,10 @@ form {
     padding: 1rem;
 }
 
+#faq {
+    width: 60%;
+}
+
 #form-block h5 {
     width: 50%;
     text-align: justify;
