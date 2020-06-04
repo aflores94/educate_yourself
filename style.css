@@ -185,7 +185,7 @@ form {
     border: .7rem double black;
 }
 
-#faq a:link,
+#faq a, a:link,
 a:visited {
     color: goldenrod;
 }
