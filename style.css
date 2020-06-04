@@ -65,7 +65,7 @@ button a:hover {
 }
 
 #urgent-action-alert a:link,
-a:visited, #resource-lists a:link, a:visited {
+a:visited {
     color: black;
 }
 
@@ -80,6 +80,7 @@ a:visited, #resource-lists a:link, a:visited {
     list-style: square;
     padding: .3rem;
 }
+
 #overlay {
     position: fixed;
     top: 0;
@@ -165,10 +166,12 @@ form {
 #form-block option {
     font-family: 'Permanent Marker', cursive;
     text-align: center;
+    text-decoration: none;
 }
 
 #faq ol,
 #form-block form, #welcome-text {
+    list-style-type: none;
     font-family: 'Playfair Display', serif;
     text-align: center;
     padding: 1rem;
@@ -186,7 +189,7 @@ a:visited {
     color: black;
 }
 
-#resource-lists {
+#resources {
     display: flex;
     flex-flow: column wrap;
     margin-top: 2%;
@@ -194,24 +197,25 @@ a:visited {
     list-style: none;
  }
  
-#resource-lists ul {
+#resources ul {
     font-family: 'Playfair Display', serif;
     text-align: center;
     margin: 0;
     padding: 1rem;
+    list-style: none;
 }
 
-#resource-lists a:link, a:visited {
+#resources li a:link, a:visited {
     color: black;
 }
 
-.resource-links {
+.social-name {
+    font-weight: bold;
     color: black;
 }
 
 .content {
-    margin-left: 30%;
-    margin-top: 5%;
+    margin-left: 32%;
 }
 
 .header-fixed {
