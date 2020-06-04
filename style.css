@@ -30,20 +30,20 @@ button {
     padding: .7rem;
     font-family: 'Permanent Marker', cursive;
     font-weight: bold;
-    color: goldenrod;
-    background-color: white;
+    color: white;
+    background-color: black;
 }
 
 button a {
     font-weight: bold;
-    color: goldenrod;
+    color: white;
     text-decoration: none;
 }
 
 button:hover,
 button a:hover {
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
 }
 
 #urgent-action-alert {
